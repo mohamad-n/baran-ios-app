@@ -1,0 +1,6 @@
+framework module Pods_baran_vipTests {
+  umbrella header "Pods-baran-vipTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

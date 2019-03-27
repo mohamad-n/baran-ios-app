@@ -1,0 +1,962 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B727D3D1E2D76CBC4457BA3 /* Pods_baran_vip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44662B40AB23DE6C20E59241 /* Pods_baran_vip.framework */; };
+		5E569A3DBF1AF5F95CAE82E7 /* Pods_baran_vipTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBBF0E992DDEFEDBC2D9A906 /* Pods_baran_vipTests.framework */; };
+		D1EC4EF7224C12400085DB98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EC4EF6224C12400085DB98 /* AppDelegate.swift */; };
+		D1EC4EF9224C12400085DB98 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EC4EF8224C12400085DB98 /* ViewController.swift */; };
+		D1EC4EFC224C12400085DB98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1EC4EFA224C12400085DB98 /* Main.storyboard */; };
+		D1EC4EFE224C12440085DB98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1EC4EFD224C12440085DB98 /* Assets.xcassets */; };
+		D1EC4F01224C12440085DB98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1EC4EFF224C12440085DB98 /* LaunchScreen.storyboard */; };
+		D1EC4F0C224C12440085DB98 /* baran_vipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EC4F0B224C12440085DB98 /* baran_vipTests.swift */; };
+		D1EC4F17224C12440085DB98 /* baran_vipUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EC4F16224C12440085DB98 /* baran_vipUITests.swift */; };
+		D1EC4F2D224C16700085DB98 /* IRANYekanMobileRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D1EC4F2C224C165E0085DB98 /* IRANYekanMobileRegular.ttf */; };
+		D1EC4F2E224C16730085DB98 /* IRANYekanMobileBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D1EC4F2B224C165A0085DB98 /* IRANYekanMobileBold.ttf */; };
+		D1EC4F2F224C16750085DB98 /* IRANYekanMobileLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D1EC4F2A224C16500085DB98 /* IRANYekanMobileLight.ttf */; };
+		D1EC4F31224C16870085DB98 /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EC4F30224C16870085DB98 /* extension.swift */; };
+		D1EC4F33224C16A10085DB98 /* color pallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EC4F32224C16A10085DB98 /* color pallet.swift */; };
+		D1EC4F35224C16B70085DB98 /* device detector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EC4F34224C16B70085DB98 /* device detector.swift */; };
+		D1EC4F37224C16CE0085DB98 /* toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EC4F36224C16CE0085DB98 /* toast.swift */; };
+		D1EC4F39224C16E10085DB98 /* app property.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EC4F38224C16E10085DB98 /* app property.swift */; };
+		D1EC4F3B224C16FE0085DB98 /* font changer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EC4F3A224C16FE0085DB98 /* font changer.swift */; };
+		D1EC4F3D224C17130085DB98 /* alert manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EC4F3C224C17130085DB98 /* alert manager.swift */; };
+		D1EC4F3F224C19690085DB98 /* switcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EC4F3E224C19690085DB98 /* switcher.swift */; };
+		D1EC4F41224C19B00085DB98 /* main view (tab bar).swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EC4F40224C19B00085DB98 /* main view (tab bar).swift */; };
+		D1EC4F44224C19F60085DB98 /* home.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EC4F43224C19F60085DB98 /* home.swift */; };
+		D1EC4F47224C1A360085DB98 /* blog.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EC4F46224C1A360085DB98 /* blog.swift */; };
+		D1EC4F4A224C1A730085DB98 /* service.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EC4F49224C1A730085DB98 /* service.swift */; };
+		D1EC4F4D224C1A940085DB98 /* product.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EC4F4C224C1A940085DB98 /* product.swift */; };
+		D1EC4F4F224C1FB10085DB98 /* register.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EC4F4E224C1FB10085DB98 /* register.swift */; };
+		D1EC4F51224C24DC0085DB98 /* user initial.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EC4F50224C24DC0085DB98 /* user initial.swift */; };
+		D1EC4F54224C25200085DB98 /* user method.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EC4F53224C25200085DB98 /* user method.swift */; };
+		D1EC4F56224C271E0085DB98 /* verify code page.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EC4F55224C271E0085DB98 /* verify code page.swift */; };
+		D1EC4F58224C275B0085DB98 /* register completion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EC4F57224C275B0085DB98 /* register completion.swift */; };
+		D1EC4F5A224C27A70085DB98 /* user model.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EC4F59224C27A70085DB98 /* user model.swift */; };
+		D1EC4F5C224C28290085DB98 /* Base Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EC4F5B224C28290085DB98 /* Base Provider.swift */; };
+		D1EC4F5E224C28BC0085DB98 /* loader view.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EC4F5D224C28BC0085DB98 /* loader view.swift */; };
+		E63A4708C1F893B17DBAB56D /* Pods_baran_vipUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E530BDFE469D661B99688DC5 /* Pods_baran_vipUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D1EC4F08224C12440085DB98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1EC4EEB224C12400085DB98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1EC4EF2224C12400085DB98;
+			remoteInfo = "baran-vip";
+		};
+		D1EC4F13224C12440085DB98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1EC4EEB224C12400085DB98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1EC4EF2224C12400085DB98;
+			remoteInfo = "baran-vip";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1B3D85B3A287560146A10557 /* Pods-baran-vipUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-baran-vipUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-baran-vipUITests/Pods-baran-vipUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		44662B40AB23DE6C20E59241 /* Pods_baran_vip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_baran_vip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5569D9C01F906259A85F03CB /* Pods-baran-vipTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-baran-vipTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-baran-vipTests/Pods-baran-vipTests.debug.xcconfig"; sourceTree = "<group>"; };
+		559B1D1058CE9574F6B87459 /* Pods-baran-vipUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-baran-vipUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-baran-vipUITests/Pods-baran-vipUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A31C0956625E0E2E06EC0B0D /* Pods-baran-vipTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-baran-vipTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-baran-vipTests/Pods-baran-vipTests.release.xcconfig"; sourceTree = "<group>"; };
+		B584F595113389216D459FD3 /* Pods-baran-vip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-baran-vip.debug.xcconfig"; path = "Pods/Target Support Files/Pods-baran-vip/Pods-baran-vip.debug.xcconfig"; sourceTree = "<group>"; };
+		D1EC4EF3224C12400085DB98 /* baran-vip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "baran-vip.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1EC4EF6224C12400085DB98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D1EC4EF8224C12400085DB98 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D1EC4EFB224C12400085DB98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D1EC4EFD224C12440085DB98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D1EC4F00224C12440085DB98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D1EC4F02224C12440085DB98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1EC4F07224C12440085DB98 /* baran-vipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "baran-vipTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1EC4F0B224C12440085DB98 /* baran_vipTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = baran_vipTests.swift; sourceTree = "<group>"; };
+		D1EC4F0D224C12440085DB98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1EC4F12224C12440085DB98 /* baran-vipUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "baran-vipUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1EC4F16224C12440085DB98 /* baran_vipUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = baran_vipUITests.swift; sourceTree = "<group>"; };
+		D1EC4F18224C12440085DB98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1EC4F2A224C16500085DB98 /* IRANYekanMobileLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = IRANYekanMobileLight.ttf; sourceTree = "<group>"; };
+		D1EC4F2B224C165A0085DB98 /* IRANYekanMobileBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = IRANYekanMobileBold.ttf; sourceTree = "<group>"; };
+		D1EC4F2C224C165E0085DB98 /* IRANYekanMobileRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = IRANYekanMobileRegular.ttf; sourceTree = "<group>"; };
+		D1EC4F30224C16870085DB98 /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
+		D1EC4F32224C16A10085DB98 /* color pallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "color pallet.swift"; sourceTree = "<group>"; };
+		D1EC4F34224C16B70085DB98 /* device detector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "device detector.swift"; sourceTree = "<group>"; };
+		D1EC4F36224C16CE0085DB98 /* toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = toast.swift; sourceTree = "<group>"; };
+		D1EC4F38224C16E10085DB98 /* app property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "app property.swift"; sourceTree = "<group>"; };
+		D1EC4F3A224C16FE0085DB98 /* font changer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "font changer.swift"; sourceTree = "<group>"; };
+		D1EC4F3C224C17130085DB98 /* alert manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "alert manager.swift"; sourceTree = "<group>"; };
+		D1EC4F3E224C19690085DB98 /* switcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = switcher.swift; sourceTree = "<group>"; };
+		D1EC4F40224C19B00085DB98 /* main view (tab bar).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "main view (tab bar).swift"; sourceTree = "<group>"; };
+		D1EC4F43224C19F60085DB98 /* home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = home.swift; sourceTree = "<group>"; };
+		D1EC4F46224C1A360085DB98 /* blog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blog.swift; sourceTree = "<group>"; };
+		D1EC4F49224C1A730085DB98 /* service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = service.swift; sourceTree = "<group>"; };
+		D1EC4F4C224C1A940085DB98 /* product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = product.swift; sourceTree = "<group>"; };
+		D1EC4F4E224C1FB10085DB98 /* register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = register.swift; sourceTree = "<group>"; };
+		D1EC4F50224C24DC0085DB98 /* user initial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "user initial.swift"; sourceTree = "<group>"; };
+		D1EC4F53224C25200085DB98 /* user method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "user method.swift"; sourceTree = "<group>"; };
+		D1EC4F55224C271E0085DB98 /* verify code page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "verify code page.swift"; sourceTree = "<group>"; };
+		D1EC4F57224C275B0085DB98 /* register completion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "register completion.swift"; sourceTree = "<group>"; };
+		D1EC4F59224C27A70085DB98 /* user model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "user model.swift"; sourceTree = "<group>"; };
+		D1EC4F5B224C28290085DB98 /* Base Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Base Provider.swift"; sourceTree = "<group>"; };
+		D1EC4F5D224C28BC0085DB98 /* loader view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "loader view.swift"; sourceTree = "<group>"; };
+		D1EC4F60224C38FA0085DB98 /* baran-vip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "baran-vip.entitlements"; sourceTree = "<group>"; };
+		E530BDFE469D661B99688DC5 /* Pods_baran_vipUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_baran_vipUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBBF0E992DDEFEDBC2D9A906 /* Pods_baran_vipTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_baran_vipTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE0CE4449E849B6387E27B15 /* Pods-baran-vip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-baran-vip.release.xcconfig"; path = "Pods/Target Support Files/Pods-baran-vip/Pods-baran-vip.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D1EC4EF0224C12400085DB98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B727D3D1E2D76CBC4457BA3 /* Pods_baran_vip.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1EC4F04224C12440085DB98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E569A3DBF1AF5F95CAE82E7 /* Pods_baran_vipTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1EC4F0F224C12440085DB98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E63A4708C1F893B17DBAB56D /* Pods_baran_vipUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9E32A1A4CC95F768B6A93C67 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B584F595113389216D459FD3 /* Pods-baran-vip.debug.xcconfig */,
+				EE0CE4449E849B6387E27B15 /* Pods-baran-vip.release.xcconfig */,
+				5569D9C01F906259A85F03CB /* Pods-baran-vipTests.debug.xcconfig */,
+				A31C0956625E0E2E06EC0B0D /* Pods-baran-vipTests.release.xcconfig */,
+				1B3D85B3A287560146A10557 /* Pods-baran-vipUITests.debug.xcconfig */,
+				559B1D1058CE9574F6B87459 /* Pods-baran-vipUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D1EC4EEA224C12400085DB98 = {
+			isa = PBXGroup;
+			children = (
+				D1EC4EF5224C12400085DB98 /* baran-vip */,
+				D1EC4F0A224C12440085DB98 /* baran-vipTests */,
+				D1EC4F15224C12440085DB98 /* baran-vipUITests */,
+				D1EC4EF4224C12400085DB98 /* Products */,
+				9E32A1A4CC95F768B6A93C67 /* Pods */,
+				E1E58824D60272AA0F88B4D2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D1EC4EF4224C12400085DB98 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D1EC4EF3224C12400085DB98 /* baran-vip.app */,
+				D1EC4F07224C12440085DB98 /* baran-vipTests.xctest */,
+				D1EC4F12224C12440085DB98 /* baran-vipUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D1EC4EF5224C12400085DB98 /* baran-vip */ = {
+			isa = PBXGroup;
+			children = (
+				D1EC4F60224C38FA0085DB98 /* baran-vip.entitlements */,
+				D1EC4F26224C15C20085DB98 /* views */,
+				D1EC4F27224C15CD0085DB98 /* setting */,
+				D1EC4F25224C15BC0085DB98 /* model */,
+				D1EC4F24224C15B30085DB98 /* service */,
+				D1EC4F28224C16280085DB98 /* assets */,
+				D1EC4EF6224C12400085DB98 /* AppDelegate.swift */,
+				D1EC4F3E224C19690085DB98 /* switcher.swift */,
+				D1EC4EF8224C12400085DB98 /* ViewController.swift */,
+				D1EC4EFA224C12400085DB98 /* Main.storyboard */,
+				D1EC4EFD224C12440085DB98 /* Assets.xcassets */,
+				D1EC4EFF224C12440085DB98 /* LaunchScreen.storyboard */,
+				D1EC4F02224C12440085DB98 /* Info.plist */,
+			);
+			path = "baran-vip";
+			sourceTree = "<group>";
+		};
+		D1EC4F0A224C12440085DB98 /* baran-vipTests */ = {
+			isa = PBXGroup;
+			children = (
+				D1EC4F0B224C12440085DB98 /* baran_vipTests.swift */,
+				D1EC4F0D224C12440085DB98 /* Info.plist */,
+			);
+			path = "baran-vipTests";
+			sourceTree = "<group>";
+		};
+		D1EC4F15224C12440085DB98 /* baran-vipUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D1EC4F16224C12440085DB98 /* baran_vipUITests.swift */,
+				D1EC4F18224C12440085DB98 /* Info.plist */,
+			);
+			path = "baran-vipUITests";
+			sourceTree = "<group>";
+		};
+		D1EC4F24224C15B30085DB98 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				D1EC4F52224C25070085DB98 /* user */,
+				D1EC4F5B224C28290085DB98 /* Base Provider.swift */,
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
+		D1EC4F25224C15BC0085DB98 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				D1EC4F59224C27A70085DB98 /* user model.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		D1EC4F26224C15C20085DB98 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				D1EC4F40224C19B00085DB98 /* main view (tab bar).swift */,
+				D1EC4F5F224C2F7B0085DB98 /* register */,
+				D1EC4F4B224C1A7F0085DB98 /* product */,
+				D1EC4F48224C1A520085DB98 /* service */,
+				D1EC4F45224C1A280085DB98 /* blog */,
+				D1EC4F42224C19EC0085DB98 /* home */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		D1EC4F27224C15CD0085DB98 /* setting */ = {
+			isa = PBXGroup;
+			children = (
+				D1EC4F30224C16870085DB98 /* extension.swift */,
+				D1EC4F32224C16A10085DB98 /* color pallet.swift */,
+				D1EC4F34224C16B70085DB98 /* device detector.swift */,
+				D1EC4F36224C16CE0085DB98 /* toast.swift */,
+				D1EC4F38224C16E10085DB98 /* app property.swift */,
+				D1EC4F3A224C16FE0085DB98 /* font changer.swift */,
+				D1EC4F3C224C17130085DB98 /* alert manager.swift */,
+				D1EC4F5D224C28BC0085DB98 /* loader view.swift */,
+			);
+			path = setting;
+			sourceTree = "<group>";
+		};
+		D1EC4F28224C16280085DB98 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				D1EC4F29224C162F0085DB98 /* fonts */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		D1EC4F29224C162F0085DB98 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D1EC4F2C224C165E0085DB98 /* IRANYekanMobileRegular.ttf */,
+				D1EC4F2B224C165A0085DB98 /* IRANYekanMobileBold.ttf */,
+				D1EC4F2A224C16500085DB98 /* IRANYekanMobileLight.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		D1EC4F42224C19EC0085DB98 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				D1EC4F43224C19F60085DB98 /* home.swift */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		D1EC4F45224C1A280085DB98 /* blog */ = {
+			isa = PBXGroup;
+			children = (
+				D1EC4F46224C1A360085DB98 /* blog.swift */,
+			);
+			path = blog;
+			sourceTree = "<group>";
+		};
+		D1EC4F48224C1A520085DB98 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				D1EC4F49224C1A730085DB98 /* service.swift */,
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
+		D1EC4F4B224C1A7F0085DB98 /* product */ = {
+			isa = PBXGroup;
+			children = (
+				D1EC4F4C224C1A940085DB98 /* product.swift */,
+			);
+			path = product;
+			sourceTree = "<group>";
+		};
+		D1EC4F52224C25070085DB98 /* user */ = {
+			isa = PBXGroup;
+			children = (
+				D1EC4F50224C24DC0085DB98 /* user initial.swift */,
+				D1EC4F53224C25200085DB98 /* user method.swift */,
+			);
+			path = user;
+			sourceTree = "<group>";
+		};
+		D1EC4F5F224C2F7B0085DB98 /* register */ = {
+			isa = PBXGroup;
+			children = (
+				D1EC4F4E224C1FB10085DB98 /* register.swift */,
+				D1EC4F55224C271E0085DB98 /* verify code page.swift */,
+				D1EC4F57224C275B0085DB98 /* register completion.swift */,
+			);
+			path = register;
+			sourceTree = "<group>";
+		};
+		E1E58824D60272AA0F88B4D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44662B40AB23DE6C20E59241 /* Pods_baran_vip.framework */,
+				EBBF0E992DDEFEDBC2D9A906 /* Pods_baran_vipTests.framework */,
+				E530BDFE469D661B99688DC5 /* Pods_baran_vipUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D1EC4EF2224C12400085DB98 /* baran-vip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1EC4F1B224C12440085DB98 /* Build configuration list for PBXNativeTarget "baran-vip" */;
+			buildPhases = (
+				4C6F5BCECA8298A836FB0A0C /* [CP] Check Pods Manifest.lock */,
+				D1EC4EEF224C12400085DB98 /* Sources */,
+				D1EC4EF0224C12400085DB98 /* Frameworks */,
+				D1EC4EF1224C12400085DB98 /* Resources */,
+				A60CD5AE3D8B7FA50C7EE354 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "baran-vip";
+			productName = "baran-vip";
+			productReference = D1EC4EF3224C12400085DB98 /* baran-vip.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D1EC4F06224C12440085DB98 /* baran-vipTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1EC4F1E224C12440085DB98 /* Build configuration list for PBXNativeTarget "baran-vipTests" */;
+			buildPhases = (
+				6BF440D64D2C1F1D971369C4 /* [CP] Check Pods Manifest.lock */,
+				D1EC4F03224C12440085DB98 /* Sources */,
+				D1EC4F04224C12440085DB98 /* Frameworks */,
+				D1EC4F05224C12440085DB98 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D1EC4F09224C12440085DB98 /* PBXTargetDependency */,
+			);
+			name = "baran-vipTests";
+			productName = "baran-vipTests";
+			productReference = D1EC4F07224C12440085DB98 /* baran-vipTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D1EC4F11224C12440085DB98 /* baran-vipUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1EC4F21224C12440085DB98 /* Build configuration list for PBXNativeTarget "baran-vipUITests" */;
+			buildPhases = (
+				7F724C7701E0E5AE6088D044 /* [CP] Check Pods Manifest.lock */,
+				D1EC4F0E224C12440085DB98 /* Sources */,
+				D1EC4F0F224C12440085DB98 /* Frameworks */,
+				D1EC4F10224C12440085DB98 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D1EC4F14224C12440085DB98 /* PBXTargetDependency */,
+			);
+			name = "baran-vipUITests";
+			productName = "baran-vipUITests";
+			productReference = D1EC4F12224C12440085DB98 /* baran-vipUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D1EC4EEB224C12400085DB98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = isibland;
+				TargetAttributes = {
+					D1EC4EF2224C12400085DB98 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					D1EC4F06224C12440085DB98 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = D1EC4EF2224C12400085DB98;
+					};
+					D1EC4F11224C12440085DB98 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = D1EC4EF2224C12400085DB98;
+					};
+				};
+			};
+			buildConfigurationList = D1EC4EEE224C12400085DB98 /* Build configuration list for PBXProject "baran-vip" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D1EC4EEA224C12400085DB98;
+			productRefGroup = D1EC4EF4224C12400085DB98 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D1EC4EF2224C12400085DB98 /* baran-vip */,
+				D1EC4F06224C12440085DB98 /* baran-vipTests */,
+				D1EC4F11224C12440085DB98 /* baran-vipUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D1EC4EF1224C12400085DB98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1EC4F2D224C16700085DB98 /* IRANYekanMobileRegular.ttf in Resources */,
+				D1EC4F2E224C16730085DB98 /* IRANYekanMobileBold.ttf in Resources */,
+				D1EC4F2F224C16750085DB98 /* IRANYekanMobileLight.ttf in Resources */,
+				D1EC4F01224C12440085DB98 /* LaunchScreen.storyboard in Resources */,
+				D1EC4EFE224C12440085DB98 /* Assets.xcassets in Resources */,
+				D1EC4EFC224C12400085DB98 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1EC4F05224C12440085DB98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1EC4F10224C12440085DB98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4C6F5BCECA8298A836FB0A0C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-baran-vip-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6BF440D64D2C1F1D971369C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-baran-vipTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F724C7701E0E5AE6088D044 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-baran-vipUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A60CD5AE3D8B7FA50C7EE354 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-baran-vip/Pods-baran-vip-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/DefaultsKit/DefaultsKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FLEX/FLEX.framework",
+				"${BUILT_PRODUCTS_DIR}/FSPagerView/FSPagerView.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya-ObjectMapper/Moya_ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DefaultsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLEX.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSPagerView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya_ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCLAlertView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-baran-vip/Pods-baran-vip-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D1EC4EEF224C12400085DB98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1EC4F3F224C19690085DB98 /* switcher.swift in Sources */,
+				D1EC4F3D224C17130085DB98 /* alert manager.swift in Sources */,
+				D1EC4F41224C19B00085DB98 /* main view (tab bar).swift in Sources */,
+				D1EC4F4D224C1A940085DB98 /* product.swift in Sources */,
+				D1EC4F39224C16E10085DB98 /* app property.swift in Sources */,
+				D1EC4F31224C16870085DB98 /* extension.swift in Sources */,
+				D1EC4F54224C25200085DB98 /* user method.swift in Sources */,
+				D1EC4F58224C275B0085DB98 /* register completion.swift in Sources */,
+				D1EC4F5A224C27A70085DB98 /* user model.swift in Sources */,
+				D1EC4F37224C16CE0085DB98 /* toast.swift in Sources */,
+				D1EC4F5C224C28290085DB98 /* Base Provider.swift in Sources */,
+				D1EC4F56224C271E0085DB98 /* verify code page.swift in Sources */,
+				D1EC4F44224C19F60085DB98 /* home.swift in Sources */,
+				D1EC4F51224C24DC0085DB98 /* user initial.swift in Sources */,
+				D1EC4EF9224C12400085DB98 /* ViewController.swift in Sources */,
+				D1EC4F47224C1A360085DB98 /* blog.swift in Sources */,
+				D1EC4F4A224C1A730085DB98 /* service.swift in Sources */,
+				D1EC4F5E224C28BC0085DB98 /* loader view.swift in Sources */,
+				D1EC4F3B224C16FE0085DB98 /* font changer.swift in Sources */,
+				D1EC4F35224C16B70085DB98 /* device detector.swift in Sources */,
+				D1EC4F33224C16A10085DB98 /* color pallet.swift in Sources */,
+				D1EC4F4F224C1FB10085DB98 /* register.swift in Sources */,
+				D1EC4EF7224C12400085DB98 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1EC4F03224C12440085DB98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1EC4F0C224C12440085DB98 /* baran_vipTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1EC4F0E224C12440085DB98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1EC4F17224C12440085DB98 /* baran_vipUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D1EC4F09224C12440085DB98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D1EC4EF2224C12400085DB98 /* baran-vip */;
+			targetProxy = D1EC4F08224C12440085DB98 /* PBXContainerItemProxy */;
+		};
+		D1EC4F14224C12440085DB98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D1EC4EF2224C12400085DB98 /* baran-vip */;
+			targetProxy = D1EC4F13224C12440085DB98 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D1EC4EFA224C12400085DB98 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D1EC4EFB224C12400085DB98 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D1EC4EFF224C12440085DB98 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D1EC4F00224C12440085DB98 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D1EC4F19224C12440085DB98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D1EC4F1A224C12440085DB98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D1EC4F1C224C12440085DB98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B584F595113389216D459FD3 /* Pods-baran-vip.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "baran-vip/baran-vip.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C72E2Z4PC5;
+				INFOPLIST_FILE = "baran-vip/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ir.baran.vip.baran-vip";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D1EC4F1D224C12440085DB98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE0CE4449E849B6387E27B15 /* Pods-baran-vip.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "baran-vip/baran-vip.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C72E2Z4PC5;
+				INFOPLIST_FILE = "baran-vip/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ir.baran.vip.baran-vip";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D1EC4F1F224C12440085DB98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5569D9C01F906259A85F03CB /* Pods-baran-vipTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C72E2Z4PC5;
+				INFOPLIST_FILE = "baran-vipTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ir.baran.vip.baran-vipTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/baran-vip.app/baran-vip";
+			};
+			name = Debug;
+		};
+		D1EC4F20224C12440085DB98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A31C0956625E0E2E06EC0B0D /* Pods-baran-vipTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C72E2Z4PC5;
+				INFOPLIST_FILE = "baran-vipTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ir.baran.vip.baran-vipTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/baran-vip.app/baran-vip";
+			};
+			name = Release;
+		};
+		D1EC4F22224C12440085DB98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B3D85B3A287560146A10557 /* Pods-baran-vipUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C72E2Z4PC5;
+				INFOPLIST_FILE = "baran-vipUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ir.baran.vip.baran-vipUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "baran-vip";
+			};
+			name = Debug;
+		};
+		D1EC4F23224C12440085DB98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 559B1D1058CE9574F6B87459 /* Pods-baran-vipUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C72E2Z4PC5;
+				INFOPLIST_FILE = "baran-vipUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ir.baran.vip.baran-vipUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "baran-vip";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D1EC4EEE224C12400085DB98 /* Build configuration list for PBXProject "baran-vip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1EC4F19224C12440085DB98 /* Debug */,
+				D1EC4F1A224C12440085DB98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1EC4F1B224C12440085DB98 /* Build configuration list for PBXNativeTarget "baran-vip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1EC4F1C224C12440085DB98 /* Debug */,
+				D1EC4F1D224C12440085DB98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1EC4F1E224C12440085DB98 /* Build configuration list for PBXNativeTarget "baran-vipTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1EC4F1F224C12440085DB98 /* Debug */,
+				D1EC4F20224C12440085DB98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1EC4F21224C12440085DB98 /* Build configuration list for PBXNativeTarget "baran-vipUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1EC4F22224C12440085DB98 /* Debug */,
+				D1EC4F23224C12440085DB98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D1EC4EEB224C12400085DB98 /* Project object */;
+}
